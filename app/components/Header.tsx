@@ -24,11 +24,11 @@ export default function Header() {
       <div className="flex h-16 items-center justify-between bg-black/80 px-6 backdrop-blur md:px-10">
         <Link
           href="#top"
-          className="text-sm font-bold uppercase tracking-widest text-white"
+          className="font-anton text-base tracking-widest text-white"
         >
           ADIF
         </Link>
-        <nav className="flex items-center gap-6 text-sm font-semibold uppercase tracking-wider text-white">
+        <nav className="flex items-center gap-6 font-montserrat text-sm font-bold tracking-wider text-white">
           <Link href="#our-story" className="transition-opacity hover:opacity-70">
             Our Story
           </Link>
