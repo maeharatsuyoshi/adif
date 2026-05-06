@@ -68,7 +68,7 @@ export default function ContactUs() {
               </dt>
               <dd className="mt-2 text-zinc-200">
                 {t.fields.location.value.map((line, i) => (
-                  <span key={i} className="block whitespace-nowrap">
+                  <span key={i} className="block break-keep sm:whitespace-nowrap">
                     {line}
                   </span>
                 ))}
