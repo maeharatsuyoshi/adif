@@ -1,13 +1,12 @@
+import Constellation from "./Constellation";
+
 export default function OurStory() {
   return (
     <section
       id="our-story"
-      className="relative bg-[#0a1628] py-24 px-6 text-white md:py-32"
+      className="relative overflow-hidden bg-[#0e1a2e] py-24 px-6 text-white md:py-32"
     >
-      <div
-        className="pointer-events-none absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_20%_30%,rgba(120,180,255,0.15)_0,transparent_40%),radial-gradient(circle_at_80%_70%,rgba(120,180,255,0.1)_0,transparent_40%)]"
-        aria-hidden
-      />
+      <Constellation />
 
       <div className="relative mx-auto max-w-6xl">
         <h2 className="text-center font-anton text-4xl tracking-wide sm:text-5xl md:text-6xl">

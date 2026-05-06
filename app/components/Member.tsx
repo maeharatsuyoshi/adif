@@ -1,3 +1,5 @@
+import HexGrid from "./HexGrid";
+
 type TeamMember = {
   name: string;
   role: string;
@@ -29,12 +31,9 @@ export default function Member() {
   return (
     <section
       id="member"
-      className="relative bg-[#0a1628] py-24 px-6 text-white md:py-32"
+      className="relative overflow-hidden bg-[#162a44] py-24 px-6 text-white md:py-32"
     >
-      <div
-        className="pointer-events-none absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_70%_20%,rgba(120,180,255,0.12)_0,transparent_40%),radial-gradient(circle_at_30%_80%,rgba(120,180,255,0.1)_0,transparent_40%)]"
-        aria-hidden
-      />
+      <HexGrid />
 
       <div className="relative mx-auto max-w-5xl">
         <h2 className="text-center font-anton text-4xl tracking-wide sm:text-5xl md:text-6xl">
