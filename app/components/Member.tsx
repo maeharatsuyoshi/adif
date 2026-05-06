@@ -1,15 +1,18 @@
+import Image from "next/image";
 import HexGrid from "./HexGrid";
 
 type TeamMember = {
   name: string;
   role: string;
   bio: string;
+  photo?: string;
 };
 
 const members: TeamMember[] = [
   {
     name: "Tsuyoshi Maehara",
     role: "Founder & General Partner",
+    photo: "/tsuyoshi-maehara.png",
     bio: "Managing Partner of the Asia Defense Innovation Fund. Co-founder and Head of External Affairs at BLUE VECTOR Inc., and Government Affairs Lead at Solafune Inc. Faculty of Policy Management, Keio University. In 2022, he experienced the war firsthand in Kyiv, Ukraine. Returning to Japan, he joined Solafune Inc. as Government Affairs Lead in 2023. In 2025, he founded Japan's first private defense fund, the Asia Defense Innovation Fund, and took the helm as Managing Partner. Throughout his career, he has worked consistently from the private sector to address the challenges Japan faces in diplomacy, national security, and defense.",
   },
   {
@@ -47,12 +50,25 @@ export default function Member() {
               className="grid grid-cols-1 gap-10 md:grid-cols-[220px_1fr] md:gap-14"
             >
               <div className="flex justify-center md:block">
-                <div
-                  className="flex h-48 w-48 items-center justify-center rounded-full bg-zinc-800 font-anton text-5xl text-zinc-500 ring-1 ring-white/10"
-                  aria-hidden
-                >
-                  {initials(m.name)}
-                </div>
+                {m.photo ? (
+                  <div className="relative h-48 w-48 overflow-hidden rounded-full bg-zinc-800 ring-1 ring-white/10">
+                    <Image
+                      src={m.photo}
+                      alt={m.name}
+                      fill
+                      sizes="192px"
+                      className="object-cover"
+                      priority
+                    />
+                  </div>
+                ) : (
+                  <div
+                    className="flex h-48 w-48 items-center justify-center rounded-full bg-zinc-800 font-anton text-5xl text-zinc-500 ring-1 ring-white/10"
+                    aria-hidden
+                  >
+                    {initials(m.name)}
+                  </div>
+                )}
               </div>
 
               <div>
