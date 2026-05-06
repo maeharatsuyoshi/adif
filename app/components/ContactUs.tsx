@@ -45,32 +45,31 @@ export default function ContactUs() {
             </a>
           </div>
 
-          <dl className="mt-12 grid grid-cols-1 gap-6 text-left font-montserrat text-sm sm:mt-20 sm:grid-cols-3 sm:gap-8 md:text-base">
+          <dl className="mt-12 grid grid-cols-1 gap-6 text-left font-montserrat text-sm sm:mt-20 sm:grid-cols-[auto_auto_auto] sm:gap-8 md:text-base">
             <div>
-              <dt className="text-xs font-bold uppercase tracking-[0.2em] text-zinc-400">
+              <dt className="whitespace-nowrap text-xs font-bold uppercase tracking-[0.2em] text-zinc-400">
                 {t.fields.companyName.label}
               </dt>
-              <dd className="mt-2 text-zinc-200">
+              <dd className="mt-2 whitespace-nowrap text-zinc-200">
                 {t.fields.companyName.value}
               </dd>
             </div>
             <div>
-              <dt className="text-xs font-bold uppercase tracking-[0.2em] text-zinc-400">
+              <dt className="whitespace-nowrap text-xs font-bold uppercase tracking-[0.2em] text-zinc-400">
                 {t.fields.incorporation.label}
               </dt>
-              <dd className="mt-2 text-zinc-200">
+              <dd className="mt-2 whitespace-nowrap text-zinc-200">
                 {t.fields.incorporation.value}
               </dd>
             </div>
             <div>
-              <dt className="text-xs font-bold uppercase tracking-[0.2em] text-zinc-400">
+              <dt className="whitespace-nowrap text-xs font-bold uppercase tracking-[0.2em] text-zinc-400">
                 {t.fields.location.label}
               </dt>
               <dd className="mt-2 text-zinc-200">
                 {t.fields.location.value.map((line, i) => (
-                  <span key={i}>
+                  <span key={i} className="block whitespace-nowrap">
                     {line}
-                    {i < t.fields.location.value.length - 1 && <br />}
                   </span>
                 ))}
               </dd>

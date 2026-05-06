@@ -129,9 +129,8 @@ const copy: Record<Lang, SiteCopy> = {
         location: {
           label: "Location",
           value: [
-            "Grand Tokyo South Tower,",
-            "1-9-2 Marunouchi, Chiyoda-ku,",
-            "Tokyo 100-0005, Japan",
+            "Grand Tokyo South Tower, 1-9-2",
+            "Marunouchi, Chiyoda-ku, Tokyo 100-0005, Japan",
           ],
         },
       },
@@ -224,8 +223,7 @@ const copy: Record<Lang, SiteCopy> = {
           label: "所在地",
           value: [
             "〒100-0005",
-            "東京都千代田区丸の内１丁目９－２",
-            "グラントウキョウサウスタワー",
+            "東京都千代田区丸の内１丁目９－２ グラントウキョウサウスタワー",
           ],
         },
       },
