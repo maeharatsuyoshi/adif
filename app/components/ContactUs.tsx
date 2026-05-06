@@ -3,16 +3,16 @@ export default function ContactUs() {
     <>
       <section
         id="contact-us"
-        className="bg-[#1f2937] py-28 px-6 text-white md:py-36"
+        className="bg-[#1f2937] px-5 py-20 text-white sm:px-6 sm:py-28 md:py-36"
       >
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="font-anton text-4xl tracking-wide sm:text-5xl md:text-6xl">
+          <h2 className="font-anton text-3xl tracking-wide sm:text-5xl md:text-6xl">
             Contact Us
           </h2>
 
-          <div className="mt-16 flex flex-col items-center">
+          <div className="mt-10 flex flex-col items-center sm:mt-16">
             <span
-              className="flex h-14 w-14 items-center justify-center"
+              className="flex h-12 w-12 items-center justify-center sm:h-14 sm:w-14"
               aria-hidden
             >
               <svg
@@ -23,7 +23,7 @@ export default function ContactUs() {
                 strokeWidth={1.5}
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="h-12 w-12 text-white"
+                className="h-10 w-10 text-white sm:h-12 sm:w-12"
               >
                 <rect x="3" y="5" width="18" height="14" rx="1" />
                 <path d="m3 7 9 6 9-6" />
@@ -31,13 +31,13 @@ export default function ContactUs() {
             </span>
             <a
               href="mailto:info@adif.capital"
-              className="mt-6 font-montserrat text-lg font-bold text-sky-400 underline-offset-4 hover:underline md:text-xl"
+              className="mt-5 break-all font-montserrat text-base font-bold text-sky-400 underline-offset-4 hover:underline sm:mt-6 sm:text-lg md:text-xl"
             >
               info@adif.capital
             </a>
           </div>
 
-          <dl className="mt-20 grid grid-cols-1 gap-8 text-left font-montserrat text-sm sm:grid-cols-3 md:text-base">
+          <dl className="mt-12 grid grid-cols-1 gap-6 text-left font-montserrat text-sm sm:mt-20 sm:grid-cols-3 sm:gap-8 md:text-base">
             <div>
               <dt className="text-xs font-bold uppercase tracking-[0.2em] text-zinc-400">
                 Company Name

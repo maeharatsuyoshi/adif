@@ -4,17 +4,17 @@ export default function OurStory() {
   return (
     <section
       id="our-story"
-      className="relative overflow-hidden bg-[#0e1a2e] py-24 px-6 text-white md:py-32"
+      className="relative overflow-hidden bg-[#0e1a2e] px-5 py-20 text-white sm:px-6 sm:py-24 md:py-32"
     >
       <Constellation />
 
       <div className="relative mx-auto max-w-6xl">
-        <h2 className="text-center font-anton text-4xl tracking-wide sm:text-5xl md:text-6xl">
+        <h2 className="text-center font-anton text-3xl tracking-wide sm:text-5xl md:text-6xl">
           Our Story
         </h2>
 
-        <div className="mx-auto mt-16 max-w-3xl">
-          <div className="space-y-6 font-montserrat text-sm leading-[1.9] text-zinc-200 md:text-base">
+        <div className="mx-auto mt-10 max-w-3xl sm:mt-16">
+          <div className="space-y-5 font-montserrat text-sm leading-[1.85] text-zinc-200 sm:space-y-6 sm:leading-[1.9] md:text-base">
             <p>
               For decades after the war, investment in &ldquo;defense and the
               military&rdquo; was treated as taboo in Japan. But in an era of
@@ -48,7 +48,7 @@ export default function OurStory() {
               crystallized:
             </p>
 
-            <blockquote className="border-l-2 border-white/60 pl-6 font-semibold italic text-white">
+            <blockquote className="border-l-2 border-white/60 pl-4 font-semibold italic text-white sm:pl-6">
               &ldquo;The same tragedy must never be repeated in East Asia.
               Japan&apos;s world-class technology must be deployed for national
               defense, and we must build a deterrent equal to the threats of a
@@ -97,7 +97,7 @@ export default function OurStory() {
         </div>
         */}
 
-        <p className="mx-auto mt-20 max-w-3xl text-center font-anton text-xl tracking-wide sm:text-2xl md:text-3xl">
+        <p className="mx-auto mt-14 max-w-3xl text-center font-anton text-lg tracking-wide sm:mt-20 sm:text-2xl md:text-3xl">
           All of it, to defend this country&apos;s future,
           <br />
           and the everyday lives we love.

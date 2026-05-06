@@ -21,19 +21,31 @@ export default function Header() {
           : "pointer-events-none -translate-y-full opacity-0"
       }`}
     >
-      <div className="flex h-16 items-center justify-between bg-black/80 px-6 backdrop-blur md:px-10">
+      <div className="flex h-14 items-center justify-between bg-black/80 px-5 backdrop-blur sm:h-16 sm:px-6 md:px-10">
         <Link
           href="#top"
           className="font-anton text-base tracking-widest text-white"
         >
           ADIF
         </Link>
-        <nav className="flex items-center gap-6 font-montserrat text-sm font-bold tracking-wider text-white">
-          <Link href="#our-story" className="transition-opacity hover:opacity-70">
+        <nav className="flex items-center gap-4 font-montserrat text-sm font-bold tracking-wider text-white sm:gap-6">
+          <Link
+            href="#our-story"
+            className="hidden transition-opacity hover:opacity-70 sm:inline"
+          >
             Our Story
           </Link>
-          <Link href="#member" className="transition-opacity hover:opacity-70">
+          <Link
+            href="#member"
+            className="hidden transition-opacity hover:opacity-70 sm:inline"
+          >
             Team
+          </Link>
+          <Link
+            href="#contact-us"
+            className="hidden transition-opacity hover:opacity-70 sm:inline"
+          >
+            Contact
           </Link>
           <button
             type="button"
