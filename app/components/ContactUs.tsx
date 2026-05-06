@@ -1,4 +1,12 @@
+"use client";
+
+import { useLang } from "../lib/language";
+import { getCopy } from "../lib/copy";
+
 export default function ContactUs() {
+  const { lang } = useLang();
+  const t = getCopy(lang).contact;
+
   return (
     <>
       <section
@@ -7,7 +15,7 @@ export default function ContactUs() {
       >
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="font-anton text-3xl tracking-wide sm:text-5xl md:text-6xl">
-            Contact Us
+            {t.heading}
           </h2>
 
           <div className="mt-10 flex flex-col items-center sm:mt-16">
@@ -30,38 +38,41 @@ export default function ContactUs() {
               </svg>
             </span>
             <a
-              href="mailto:info@adif.capital"
+              href={`mailto:${t.email}`}
               className="mt-5 break-all font-montserrat text-base font-bold text-sky-400 underline-offset-4 hover:underline sm:mt-6 sm:text-lg md:text-xl"
             >
-              info@adif.capital
+              {t.email}
             </a>
           </div>
 
           <dl className="mt-12 grid grid-cols-1 gap-6 text-left font-montserrat text-sm sm:mt-20 sm:grid-cols-3 sm:gap-8 md:text-base">
             <div>
               <dt className="text-xs font-bold uppercase tracking-[0.2em] text-zinc-400">
-                Company Name
+                {t.fields.companyName.label}
               </dt>
               <dd className="mt-2 text-zinc-200">
-                Asia Defense Innovation Fund LLC
+                {t.fields.companyName.value}
               </dd>
             </div>
             <div>
               <dt className="text-xs font-bold uppercase tracking-[0.2em] text-zinc-400">
-                Date of Incorporation
+                {t.fields.incorporation.label}
               </dt>
-              <dd className="mt-2 text-zinc-200">April 23, 2025</dd>
+              <dd className="mt-2 text-zinc-200">
+                {t.fields.incorporation.value}
+              </dd>
             </div>
             <div>
               <dt className="text-xs font-bold uppercase tracking-[0.2em] text-zinc-400">
-                Location
+                {t.fields.location.label}
               </dt>
               <dd className="mt-2 text-zinc-200">
-                Grand Tokyo South Tower,
-                <br />
-                1-9-2 Marunouchi, Chiyoda-ku,
-                <br />
-                Tokyo 100-0005, Japan
+                {t.fields.location.value.map((line, i) => (
+                  <span key={i}>
+                    {line}
+                    {i < t.fields.location.value.length - 1 && <br />}
+                  </span>
+                ))}
               </dd>
             </div>
           </dl>
@@ -69,8 +80,7 @@ export default function ContactUs() {
       </section>
 
       <footer className="bg-[#111827] py-6 px-6 text-center font-montserrat text-xs text-zinc-500">
-        © Copyright {new Date().getFullYear()} Asia Defense Innovation Fund — All
-        Rights Reserved
+        © Copyright {new Date().getFullYear()} {t.copyright}
       </footer>
     </>
   );

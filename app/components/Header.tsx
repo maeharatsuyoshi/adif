@@ -2,9 +2,13 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { useLang } from "../lib/language";
+import { getCopy } from "../lib/copy";
 
 export default function Header() {
   const [visible, setVisible] = useState(false);
+  const { lang, toggle } = useLang();
+  const t = getCopy(lang).nav;
 
   useEffect(() => {
     const onScroll = () => setVisible(window.scrollY > 80);
@@ -33,26 +37,27 @@ export default function Header() {
             href="#our-story"
             className="hidden transition-opacity hover:opacity-70 sm:inline"
           >
-            Our Story
+            {t.ourStory}
           </Link>
           <Link
             href="#member"
             className="hidden transition-opacity hover:opacity-70 sm:inline"
           >
-            Team
+            {t.team}
           </Link>
           <Link
             href="#contact-us"
             className="hidden transition-opacity hover:opacity-70 sm:inline"
           >
-            Contact
+            {t.contact}
           </Link>
           <button
             type="button"
+            onClick={toggle}
             className="border border-white/60 px-3 py-1 text-xs transition-colors hover:bg-white hover:text-black"
-            aria-label="Toggle language"
+            aria-label={t.toggleAriaLabel}
           >
-            JP / EN
+            {t.toggleTo}
           </button>
         </nav>
       </div>

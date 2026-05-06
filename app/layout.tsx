@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Anton, Geist, Geist_Mono, Montserrat } from "next/font/google";
 import "./globals.css";
+import { LanguageProvider } from "./lib/language";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,7 +40,9 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${anton.variable} ${montserrat.variable} antialiased`}
     >
-      <body className="flex min-h-screen flex-col">{children}</body>
+      <body className="flex min-h-screen flex-col">
+        <LanguageProvider>{children}</LanguageProvider>
+      </body>
     </html>
   );
 }
