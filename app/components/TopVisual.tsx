@@ -18,7 +18,7 @@ export default function TopVisual() {
           <h1 className="font-anton text-4xl leading-tight tracking-tight sm:text-5xl md:whitespace-nowrap md:text-6xl lg:text-7xl">
             Asia Defense Innovation Fund
           </h1>
-          <div className="mt-6 space-y-1 font-montserrat text-sm font-bold sm:mt-8 sm:text-base md:text-lg">
+          <div className="mt-6 space-y-1 font-montserrat text-base font-normal leading-snug tracking-normal sm:mt-8 sm:text-xl md:text-2xl">
             <p>
               The Indo-Pacific balance has collapsed, let&apos;s build a new
               order.
