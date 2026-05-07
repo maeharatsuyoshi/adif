@@ -18,7 +18,7 @@ export default function TopVisual() {
           <h1 className="font-anton text-4xl leading-tight tracking-tight sm:text-5xl md:whitespace-nowrap md:text-6xl lg:text-7xl">
             Asia Defense Innovation Fund
           </h1>
-          <p className="mt-8 max-w-4xl font-montserrat text-base font-normal leading-[1.6] sm:mt-10 sm:text-lg md:text-xl">
+          <p className="mt-8 font-montserrat text-lg font-semibold leading-[1.6] tracking-[-0.01em] sm:mt-10 sm:text-xl md:whitespace-nowrap md:text-[1.625rem]">
             The Indo-Pacific balance has collapsed, let&apos;s build a new
             order. <br />
             ADIF is Japan&apos;s first defense-focused fund. <br />
@@ -30,13 +30,13 @@ export default function TopVisual() {
           <div className="mt-12 flex flex-col gap-3 sm:mt-16 sm:flex-row sm:gap-4">
             <Link
               href="#our-story"
-              className="flex w-full items-center justify-center rounded-[3px] border-2 border-white px-12 py-4 font-montserrat text-sm font-medium tracking-wide transition-colors hover:bg-white hover:text-black sm:w-auto"
+              className="flex w-full items-center justify-center rounded-[3px] border-2 border-white px-12 py-4 font-montserrat text-sm font-bold tracking-wide transition-colors hover:bg-white hover:text-black sm:w-auto"
             >
               OUR STORY
             </Link>
             <Link
               href="#contact-us"
-              className="flex w-full items-center justify-center rounded-[3px] border-2 border-white px-12 py-4 font-montserrat text-sm font-medium tracking-wide transition-colors hover:bg-white hover:text-black sm:w-auto"
+              className="flex w-full items-center justify-center rounded-[3px] border-2 border-white px-12 py-4 font-montserrat text-sm font-bold tracking-wide transition-colors hover:bg-white hover:text-black sm:w-auto"
             >
               CONTACT US
             </Link>
