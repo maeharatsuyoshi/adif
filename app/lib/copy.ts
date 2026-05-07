@@ -110,6 +110,7 @@ const copy: Record<Lang, SiteCopy> = {
         {
           name: "Heigo Sato",
           role: "Senior Strategic Advisor",
+          photo: "/heigo-sato.png",
           bio: "Professor at the Faculty of International Studies, Takushoku University, and at its Graduate School of International Cooperation Studies; Director of the Institute for World Studies. Since April 2025, President of the Japan Association for Disarmament Studies. After completing his doctoral coursework at the Graduate School of Hitotsubashi University and obtaining his Ph.D. in Law in 1999, he served as Senior Research Fellow at the National Institute for Defense Studies before being appointed Professor at Takushoku University in 2006. As one of Japan's foremost authorities on national security policy, in 2010 he served as Counsellor to the Ministry of Foreign Affairs and Special Adviser to the Foreign Minister for disarmament and nuclear non-proliferation. He has represented Japan on UN Group of Governmental Experts panels covering arms control, nuclear non-proliferation, and Lethal Autonomous Weapons Systems (LAWS). His areas of expertise include international relations, U.S. politics and diplomacy, security studies, arms control and disarmament, the defense industry, and export controls.",
         },
       ],
@@ -203,6 +204,7 @@ const copy: Record<Lang, SiteCopy> = {
         {
           name: "佐藤 丙午",
           role: "Senior Strategic Advisor",
+          photo: "/heigo-sato.png",
           bio: "拓殖大学国際学部教授、同大学院国際協力学研究科教授、海外事情研究所長。2025年4月より日本軍縮学会会長。一橋大学大学院の博士課程を修了、1999年に博士（法学）取得後、防衛庁防衛研究所研究部第五研究室主任研究官を経て、2006年に拓殖大学教授に着任。日本の安全保障政策に関する第一人者として、2010年に外務省参与および外務大臣政策参与（軍縮・核不拡散担当）を務め、軍備管理、核不拡散、自律型致死兵器システム（LAWS）などの国連専門家会合パネルに日本代表として出席している。経済産業省産業構造審議会貿易経済協力分科会安全保障貿易管理小委員会委員、外務省核不拡散・核軍縮に関する有識者懇談会委員、防衛省防衛装備・技術移転に係る諸課題に関する検討会委員、日本原子力研究開発機構核不拡散科学技術フォーラム委員、参議院外交防衛委員会の有識者参考人としても招致されている。専門は国際関係論・アメリカ政治外交・安全保障論軍備管理・軍縮、防衛産業・輸出管理等。元日本防衛学会理事、外務省参与。",
         },
       ],
