@@ -45,7 +45,7 @@ export default function ContactUs() {
             </a>
           </div>
 
-          <div className="mt-12 grid grid-cols-1 gap-8 text-left font-montserrat text-sm sm:mt-20 sm:grid-cols-[auto_auto_auto] md:text-base">
+          <div className="mt-12 grid grid-cols-1 gap-10 text-left font-montserrat text-sm sm:mt-20 sm:grid-cols-2 sm:gap-x-24 md:gap-x-32 md:text-base lg:gap-x-48">
             <dl className="space-y-6">
               <div>
                 <dt className="whitespace-nowrap text-xs font-bold uppercase tracking-[0.2em] text-zinc-400">
@@ -64,25 +64,27 @@ export default function ContactUs() {
                 </dd>
               </div>
             </dl>
-            <dl>
-              <dt className="whitespace-nowrap text-xs font-bold uppercase tracking-[0.2em] text-zinc-400">
-                {t.fields.location.label}
-              </dt>
-              <dd className="mt-2 text-zinc-200">
-                {t.fields.location.value.map((line, i) => (
-                  <span key={i} className="block break-keep sm:whitespace-nowrap">
-                    {line}
-                  </span>
-                ))}
-              </dd>
-            </dl>
-            <dl>
-              <dt className="whitespace-nowrap text-xs font-bold uppercase tracking-[0.2em] text-zinc-400">
-                {t.fields.incorporation.label}
-              </dt>
-              <dd className="mt-2 whitespace-nowrap text-zinc-200">
-                {t.fields.incorporation.value}
-              </dd>
+            <dl className="space-y-6">
+              <div>
+                <dt className="whitespace-nowrap text-xs font-bold uppercase tracking-[0.2em] text-zinc-400">
+                  {t.fields.incorporation.label}
+                </dt>
+                <dd className="mt-2 whitespace-nowrap text-zinc-200">
+                  {t.fields.incorporation.value}
+                </dd>
+              </div>
+              <div>
+                <dt className="whitespace-nowrap text-xs font-bold uppercase tracking-[0.2em] text-zinc-400">
+                  {t.fields.location.label}
+                </dt>
+                <dd className="mt-2 text-zinc-200">
+                  {t.fields.location.value.map((line, i) => (
+                    <span key={i} className="block break-keep sm:whitespace-nowrap">
+                      {line}
+                    </span>
+                  ))}
+                </dd>
+              </div>
             </dl>
           </div>
         </div>
