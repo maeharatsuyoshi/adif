@@ -45,24 +45,26 @@ export default function ContactUs() {
             </a>
           </div>
 
-          <dl className="mt-12 grid grid-cols-1 gap-6 text-left font-montserrat text-sm sm:mt-20 sm:grid-cols-[auto_auto_auto] sm:gap-8 md:text-base">
-            <div>
-              <dt className="whitespace-nowrap text-xs font-bold uppercase tracking-[0.2em] text-zinc-400">
-                {t.fields.companyName.label}
-              </dt>
-              <dd className="mt-2 whitespace-nowrap text-zinc-200">
-                {t.fields.companyName.value}
-              </dd>
-            </div>
-            <div>
-              <dt className="whitespace-nowrap text-xs font-bold uppercase tracking-[0.2em] text-zinc-400">
-                {t.fields.incorporation.label}
-              </dt>
-              <dd className="mt-2 whitespace-nowrap text-zinc-200">
-                {t.fields.incorporation.value}
-              </dd>
-            </div>
-            <div>
+          <div className="mt-12 grid grid-cols-1 gap-8 text-left font-montserrat text-sm sm:mt-20 sm:grid-cols-[auto_auto_auto] md:text-base">
+            <dl className="space-y-6">
+              <div>
+                <dt className="whitespace-nowrap text-xs font-bold uppercase tracking-[0.2em] text-zinc-400">
+                  {t.fields.companyName.label}
+                </dt>
+                <dd className="mt-2 whitespace-nowrap text-zinc-200">
+                  {t.fields.companyName.value}
+                </dd>
+              </div>
+              <div>
+                <dt className="whitespace-nowrap text-xs font-bold uppercase tracking-[0.2em] text-zinc-400">
+                  {t.fields.representative.label}
+                </dt>
+                <dd className="mt-2 whitespace-nowrap text-zinc-200">
+                  {t.fields.representative.value}
+                </dd>
+              </div>
+            </dl>
+            <dl>
               <dt className="whitespace-nowrap text-xs font-bold uppercase tracking-[0.2em] text-zinc-400">
                 {t.fields.location.label}
               </dt>
@@ -73,13 +75,21 @@ export default function ContactUs() {
                   </span>
                 ))}
               </dd>
-            </div>
-          </dl>
+            </dl>
+            <dl>
+              <dt className="whitespace-nowrap text-xs font-bold uppercase tracking-[0.2em] text-zinc-400">
+                {t.fields.incorporation.label}
+              </dt>
+              <dd className="mt-2 whitespace-nowrap text-zinc-200">
+                {t.fields.incorporation.value}
+              </dd>
+            </dl>
+          </div>
         </div>
       </section>
 
       <footer className="bg-[#111827] py-6 px-6 text-center font-montserrat text-xs text-zinc-500">
-        © Copyright {new Date().getFullYear()} {t.copyright}
+        © Copyright 2025 {t.copyright}
       </footer>
     </>
   );

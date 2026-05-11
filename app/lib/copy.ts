@@ -40,6 +40,7 @@ type SiteCopy = {
     email: string;
     fields: {
       companyName: { label: string; value: string };
+      representative: { label: string; value: string };
       incorporation: { label: string; value: string };
       location: { label: string; value: string[] };
     };
@@ -123,6 +124,10 @@ const copy: Record<Lang, SiteCopy> = {
           label: "Company Name",
           value: "Asia Defense Innovation Fund LLC",
         },
+        representative: {
+          label: "Representative Member",
+          value: "Tsuyoshi Maehara",
+        },
         incorporation: {
           label: "Date of Incorporation",
           value: "April 23, 2025",
@@ -141,9 +146,9 @@ const copy: Record<Lang, SiteCopy> = {
   },
   ja: {
     nav: {
-      ourStory: "私たちの物語",
-      team: "チーム",
-      contact: "お問い合わせ",
+      ourStory: "Our Story",
+      team: "Team",
+      contact: "Contact",
       toggleAriaLabel: "Switch to English",
       toggleTo: "EN",
     },
@@ -158,7 +163,7 @@ const copy: Record<Lang, SiteCopy> = {
       contactUs: "Contact Us",
     },
     ourStory: {
-      heading: "私たちの物語",
+      heading: "Our Story",
       paragraphs: [
         {
           text: "戦後長らく「防衛・軍事」への投資がタブー視されてきた日本。しかし、地政学的リスクが急激に高まる現代において、その前提は完全に崩れ去った。今日、日本における「防衛ファンド」とは、単なる投資機関ではない。「国家の生存戦略をテクノロジーで実装するためのインフラ」としての役割を担う。",
@@ -193,7 +198,7 @@ const copy: Record<Lang, SiteCopy> = {
       ],
     },
     team: {
-      heading: "チーム",
+      heading: "Team",
       members: [
         {
           name: "前原剛",
@@ -210,12 +215,16 @@ const copy: Record<Lang, SiteCopy> = {
       ],
     },
     contact: {
-      heading: "お問い合わせ",
+      heading: "Contact Us",
       email: "info@adif.capital",
       fields: {
         companyName: {
           label: "会社名",
           value: "合同会社Asia Defense Innovation Fund",
+        },
+        representative: {
+          label: "代表社員",
+          value: "前原 剛",
         },
         incorporation: {
           label: "会社設立日",
