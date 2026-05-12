@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:libertad.gov.il)"
+      "WebFetch(domain:libertad.gov.il)",
+      "Bash(find postcss* tailwind*)",
+      "Bash(node scripts/create-admin.mjs)"
     ]
   }
 }
