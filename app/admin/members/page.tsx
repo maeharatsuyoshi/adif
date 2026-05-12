@@ -4,6 +4,8 @@ import { redirect } from "next/navigation";
 import { createClient } from "../../lib/supabase/server";
 import { listMembers } from "../../lib/members";
 import { deleteMember } from "./actions";
+import DeleteButton from "./DeleteButton";
+import AdminTopBar from "../AdminTopBar";
 
 export const metadata = { title: "Members — Admin" };
 
@@ -19,7 +21,7 @@ export default async function MembersAdminPage() {
   return (
     <main className="min-h-screen bg-black px-6 py-16 text-white">
       <div className="mx-auto w-full max-w-5xl">
-        <div className="flex items-start justify-between gap-4">
+        <div className="flex flex-wrap items-start justify-between gap-4">
           <div>
             <Link
               href="/admin"
@@ -31,12 +33,15 @@ export default async function MembersAdminPage() {
               Team Members
             </h1>
           </div>
-          <Link
-            href="/admin/members/new"
-            className="rounded-md bg-white px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.2em] text-black transition hover:bg-white/90"
-          >
-            + New member
-          </Link>
+          <div className="flex flex-wrap items-center gap-2">
+            <Link
+              href="/admin/members/new"
+              className="rounded-md bg-white px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.2em] text-black transition hover:bg-white/90"
+            >
+              + New member
+            </Link>
+            <AdminTopBar />
+          </div>
         </div>
 
         <div className="mt-10 overflow-hidden rounded-lg border border-white/10">
@@ -80,12 +85,7 @@ export default async function MembersAdminPage() {
                     </Link>
                     <form action={deleteMember}>
                       <input type="hidden" name="id" value={m.id} />
-                      <button
-                        type="submit"
-                        className="rounded-md border border-red-500/40 px-4 py-2 text-xs uppercase tracking-[0.2em] text-red-200 transition hover:bg-red-500/10"
-                      >
-                        Delete
-                      </button>
+                      <DeleteButton />
                     </form>
                   </div>
                 </li>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useActionState } from "react";
+import Spinner from "../../components/Spinner";
 import type { MemberFormState } from "./actions";
 
 type Props = {
@@ -168,9 +169,16 @@ export default function MemberForm({ action, initial, submitLabel }: Props) {
         <button
           type="submit"
           disabled={pending}
-          className="rounded-md bg-white px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.2em] text-black transition hover:bg-white/90 disabled:cursor-not-allowed disabled:opacity-60"
+          className="flex items-center gap-2 rounded-md bg-white px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.2em] text-black transition hover:bg-white/90 disabled:cursor-not-allowed disabled:opacity-60"
         >
-          {pending ? "Saving…" : submitLabel}
+          {pending ? (
+            <>
+              <Spinner size={14} />
+              Saving…
+            </>
+          ) : (
+            submitLabel
+          )}
         </button>
         <a
           href="/admin/members"

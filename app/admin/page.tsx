@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { createClient } from "../lib/supabase/server";
-import { logout } from "../login/actions";
+import AdminTopBar from "./AdminTopBar";
 
 export const metadata = {
   title: "Admin — ADIF",
@@ -32,14 +32,7 @@ export default async function AdminPage() {
               Signed in as {user.email}
             </p>
           </div>
-          <form action={logout}>
-            <button
-              type="submit"
-              className="rounded-md border border-white/20 px-4 py-2 text-xs uppercase tracking-[0.2em] text-white transition hover:bg-white/10"
-            >
-              Sign out
-            </button>
-          </form>
+          <AdminTopBar />
         </div>
 
         <div className="mt-12 grid gap-4 sm:grid-cols-2">

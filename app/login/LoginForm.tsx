@@ -1,6 +1,7 @@
 "use client";
 
 import { useActionState, useState } from "react";
+import Spinner from "../components/Spinner";
 import { login, type LoginState } from "./actions";
 
 const initialState: LoginState = undefined;
@@ -102,9 +103,16 @@ export default function LoginForm() {
       <button
         type="submit"
         disabled={pending}
-        className="mt-2 w-full rounded-md bg-white px-4 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-black transition hover:bg-white/90 disabled:cursor-not-allowed disabled:opacity-60"
+        className="mt-2 flex w-full items-center justify-center gap-2 rounded-md bg-white px-4 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-black transition hover:bg-white/90 disabled:cursor-not-allowed disabled:opacity-60"
       >
-        {pending ? "Signing in…" : "Sign in"}
+        {pending ? (
+          <>
+            <Spinner size={16} />
+            Signing in…
+          </>
+        ) : (
+          "Sign in"
+        )}
       </button>
     </form>
   );
