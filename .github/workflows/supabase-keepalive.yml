@@ -1,0 +1,17 @@
+name: Supabase Keepalive
+
+on:
+  schedule:
+    - cron: '0 12 * * 1'  # Monday 12:00 UTC
+    - cron: '0 12 * * 4'  # Thursday 12:00 UTC
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Supabase REST API
+        run: |
+          curl -fsS \
+            "${{ secrets.SUPABASE_URL }}/rest/v1/team_members?select=id&limit=1" \
+            -H "apikey: ${{ secrets.SUPABASE_ANON_KEY }}"
