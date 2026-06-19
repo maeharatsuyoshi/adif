@@ -11,13 +11,15 @@ jobs:
     steps:
       - name: Ping Supabase REST API
         run: |
-          # Unique query param + no-cache header so the request can't be
-          # served from Cloudflare's edge cache and always hits Supabase's
-          # origin, which is what resets the inactivity / auto-pause timer.
+          # Vary the (PostgREST-valid) offset param per run + no-cache headers
+          # so the URL is unique each time and can't be served from an edge
+          # cache. The request always reaches Supabase's origin and runs a real
+          # query, which is what resets the inactivity / auto-pause timer.
           curl -fsS \
             --retry 5 --retry-all-errors --retry-delay 15 \
             --connect-timeout 15 --max-time 60 \
             -H "apikey: ${{ secrets.SUPABASE_ANON_KEY }}" \
+            -H "Authorization: Bearer ${{ secrets.SUPABASE_ANON_KEY }}" \
             -H "Cache-Control: no-cache" \
             -H "Pragma: no-cache" \
-            "${{ secrets.SUPABASE_URL }}/rest/v1/team_members?select=id&limit=1&_cb=${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+            "${{ secrets.SUPABASE_URL }}/rest/v1/team_members?select=id&limit=1&offset=${GITHUB_RUN_ID}"
