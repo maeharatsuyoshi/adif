@@ -2,8 +2,7 @@ name: Supabase Keepalive
 
 on:
   schedule:
-    - cron: '0 12 * * 1'  # Monday 12:00 UTC
-    - cron: '0 12 * * 4'  # Thursday 12:00 UTC
+    - cron: '0 12 * * *'  # Every day at 12:00 UTC
   workflow_dispatch:
 
 jobs:
@@ -12,6 +11,13 @@ jobs:
     steps:
       - name: Ping Supabase REST API
         run: |
+          # Unique query param + no-cache header so the request can't be
+          # served from Cloudflare's edge cache and always hits Supabase's
+          # origin, which is what resets the inactivity / auto-pause timer.
           curl -fsS \
-            "${{ secrets.SUPABASE_URL }}/rest/v1/team_members?select=id&limit=1" \
-            -H "apikey: ${{ secrets.SUPABASE_ANON_KEY }}"
+            --retry 5 --retry-all-errors --retry-delay 15 \
+            --connect-timeout 15 --max-time 60 \
+            -H "apikey: ${{ secrets.SUPABASE_ANON_KEY }}" \
+            -H "Cache-Control: no-cache" \
+            -H "Pragma: no-cache" \
+            "${{ secrets.SUPABASE_URL }}/rest/v1/team_members?select=id&limit=1&_cb=${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
