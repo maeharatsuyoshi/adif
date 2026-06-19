@@ -3,7 +3,11 @@
     "allow": [
       "WebFetch(domain:libertad.gov.il)",
       "Bash(find postcss* tailwind*)",
-      "Bash(node scripts/create-admin.mjs)"
+      "Bash(node scripts/create-admin.mjs)",
+      "Bash(dir app *)",
+      "Bash(npx --yes supabase --version)",
+      "Bash(node -e ' *)",
+      "Bash(node scripts/seed-site-content.mjs)"
     ]
   }
 }
