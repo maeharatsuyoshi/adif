@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { redirect } from "next/navigation";
 import { createClient } from "../lib/supabase/server";
 import LoginForm from "./LoginForm";
@@ -19,7 +20,15 @@ export default async function LoginPage() {
   return (
     <main className="flex min-h-screen items-center justify-center bg-black px-6 py-16">
       <div className="w-full max-w-sm">
-        <div className="mb-10 text-center">
+        <div className="mb-10 flex flex-col items-center text-center">
+          <Image
+            src="/white-vertical.png"
+            alt="ADIF"
+            width={300}
+            height={400}
+            priority
+            className="mb-6 h-24 w-auto sm:h-28"
+          />
           <p className="text-xs uppercase tracking-[0.3em] text-white/50">
             Asia Defense Innovation Fund
           </p>

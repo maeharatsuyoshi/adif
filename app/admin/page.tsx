@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { createClient } from "../lib/supabase/server";
@@ -22,6 +23,14 @@ export default async function AdminPage() {
       <div className="mx-auto w-full max-w-3xl">
         <div className="flex items-start justify-between gap-4">
           <div>
+            <Image
+              src="/white-horizontal.png"
+              alt="ADIF"
+              width={680}
+              height={252}
+              priority
+              className="mb-4 h-10 w-auto sm:h-12"
+            />
             <p className="text-xs uppercase tracking-[0.3em] text-white/50">
               Asia Defense Innovation Fund
             </p>
