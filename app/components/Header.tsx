@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { useLang } from "../lib/language";
 import { getCopy } from "../lib/copy";
@@ -28,9 +29,17 @@ export default function Header() {
       <div className="flex h-14 items-center justify-between bg-black/80 px-5 backdrop-blur sm:h-16 sm:px-6 md:px-10">
         <Link
           href="#top"
-          className="font-anton text-base tracking-widest text-white"
+          className="flex items-center"
+          aria-label="ADIF — Asia Defense Innovation Fund"
         >
-          ADIF
+          <Image
+            src="/white-horizontal.png"
+            alt="ADIF"
+            width={680}
+            height={252}
+            priority
+            className="h-8 w-auto sm:h-9"
+          />
         </Link>
         <nav className="flex items-center gap-4 font-montserrat text-sm font-bold tracking-wider text-white sm:gap-6">
           <Link

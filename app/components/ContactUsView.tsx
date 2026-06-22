@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useLang } from "../lib/language";
 import type { ContactContent } from "../lib/siteContent";
 
@@ -22,9 +23,18 @@ export default function ContactUsView({ content }: Props) {
         className="bg-[#1f2937] px-5 py-20 text-white sm:px-6 sm:py-28 md:py-36"
       >
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="font-anton text-3xl tracking-wide sm:text-5xl md:text-6xl">
-            {t(content.heading_en, content.heading_ja)}
-          </h2>
+          <div className="flex items-center justify-center gap-6 sm:gap-10">
+            <Image
+              src="/white-vertical.png"
+              alt="ADIF"
+              width={300}
+              height={400}
+              className="h-20 w-auto sm:h-28 md:h-32"
+            />
+            <h2 className="font-anton text-3xl tracking-wide sm:text-5xl md:text-6xl">
+              {t(content.heading_en, content.heading_ja)}
+            </h2>
+          </div>
 
           <div className="mt-10 flex flex-col items-center sm:mt-16">
             <span

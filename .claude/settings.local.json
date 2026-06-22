@@ -7,7 +7,9 @@
       "Bash(dir app *)",
       "Bash(npx --yes supabase --version)",
       "Bash(node -e ' *)",
-      "Bash(node scripts/seed-site-content.mjs)"
+      "Bash(node scripts/seed-site-content.mjs)",
+      "Bash(Copy-Item public\\\\logo.png app\\\\icon.png -Force)",
+      "PowerShell(Copy-Item public\\\\logo.png app\\\\apple-icon.png -Force)"
     ]
   }
 }
