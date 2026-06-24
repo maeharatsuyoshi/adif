@@ -31,7 +31,7 @@ export default function TopVisualView({ content }: Props) {
 
       <div className="relative z-10 flex h-full w-full items-center justify-center px-5 text-white sm:px-6">
         <div className="w-full max-w-5xl">
-          <h1 className="font-anton text-4xl leading-tight tracking-tight sm:text-5xl md:whitespace-nowrap md:text-6xl lg:text-7xl">
+          <h1 className="font-cassannet text-4xl leading-tight tracking-tight sm:text-5xl md:whitespace-nowrap md:text-6xl lg:text-7xl">
             {headline}
           </h1>
           <div className="mt-8 font-montserrat text-lg font-semibold leading-[1.6] tracking-[-0.01em] sm:mt-10 sm:text-xl md:whitespace-nowrap md:text-[1.625rem]">

@@ -42,7 +42,7 @@ export default async function EditMemberPage({
             >
               ← Members
             </Link>
-            <h1 className="mt-3 font-anton text-4xl uppercase tracking-wider">
+            <h1 className="mt-3 font-cassannet text-4xl uppercase tracking-wider">
               Edit Member
             </h1>
           </div>

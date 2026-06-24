@@ -41,7 +41,7 @@ export default function MemberList({ members }: { members: DBTeamMember[] }) {
                 </div>
               ) : (
                 <div
-                  className="flex h-36 w-36 items-center justify-center rounded-full bg-zinc-800 font-anton text-5xl text-zinc-500 ring-1 ring-white/10 sm:h-48 sm:w-48"
+                  className="flex h-36 w-36 items-center justify-center rounded-full bg-zinc-800 font-cassannet text-5xl text-zinc-500 ring-1 ring-white/10 sm:h-48 sm:w-48"
                   aria-hidden
                 >
                   {initials(name)}
@@ -53,7 +53,7 @@ export default function MemberList({ members }: { members: DBTeamMember[] }) {
               <p className="text-center font-montserrat text-[10px] font-bold uppercase tracking-[0.2em] text-sky-300 sm:text-xs sm:tracking-[0.25em] md:text-left">
                 {role}
               </p>
-              <h3 className="mt-2 text-center font-anton text-2xl tracking-wide sm:text-3xl md:text-left md:text-4xl">
+              <h3 className="mt-2 text-center font-cassannet text-2xl tracking-wide sm:text-3xl md:text-left md:text-4xl">
                 {name}
               </h3>
               <p className="mt-5 font-montserrat text-sm leading-[1.85] text-zinc-300 sm:mt-6 sm:leading-[1.9] md:text-base">

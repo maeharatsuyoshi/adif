@@ -17,8 +17,8 @@ export default function NotFound() {
         className="h-24 w-auto sm:h-28"
       />
       <div>
-        <p className="font-anton text-6xl tracking-wider sm:text-7xl">404</p>
-        <h1 className="mt-3 font-anton text-2xl uppercase tracking-wider sm:text-3xl">
+        <p className="font-cassannet text-6xl tracking-wider sm:text-7xl">404</p>
+        <h1 className="mt-3 font-cassannet text-2xl uppercase tracking-wider sm:text-3xl">
           Page not found
         </h1>
         <p className="mt-3 font-montserrat text-sm text-white/60">

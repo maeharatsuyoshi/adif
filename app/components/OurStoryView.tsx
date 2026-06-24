@@ -26,7 +26,7 @@ export default function OurStoryView({ content, paragraphs }: Props) {
       <Constellation />
 
       <div className="relative mx-auto max-w-6xl">
-        <h2 className="text-center font-anton text-3xl tracking-wide sm:text-5xl md:text-6xl">
+        <h2 className="text-center font-cassannet text-3xl tracking-wide sm:text-5xl md:text-6xl">
           {heading}
         </h2>
 
@@ -58,7 +58,7 @@ export default function OurStoryView({ content, paragraphs }: Props) {
         </div>
 
         {closingLines.length > 0 ? (
-          <p className="mx-auto mt-14 max-w-3xl text-center font-anton text-lg tracking-wide sm:mt-20 sm:text-2xl md:text-3xl">
+          <p className="mx-auto mt-14 max-w-3xl text-center font-cassannet text-lg tracking-wide sm:mt-20 sm:text-2xl md:text-3xl">
             {closingLines.map((line, i) => (
               <span key={i}>
                 {line}

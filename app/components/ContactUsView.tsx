@@ -31,7 +31,7 @@ export default function ContactUsView({ content }: Props) {
               height={400}
               className="h-20 w-auto sm:h-28 md:h-32"
             />
-            <h2 className="font-anton text-3xl tracking-wide sm:text-5xl md:text-6xl">
+            <h2 className="font-cassannet text-3xl tracking-wide sm:text-5xl md:text-6xl">
               {t(content.heading_en, content.heading_ja)}
             </h2>
           </div>

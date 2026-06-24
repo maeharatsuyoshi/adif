@@ -27,7 +27,7 @@ export default async function ContactAdminPage() {
             >
               ← Admin
             </Link>
-            <h1 className="mt-3 font-anton text-4xl uppercase tracking-wider">
+            <h1 className="mt-3 font-cassannet text-4xl uppercase tracking-wider">
               Contact
             </h1>
             <p className="mt-2 text-sm text-white/60">

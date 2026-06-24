@@ -29,7 +29,7 @@ export default async function MembersAdminPage() {
             >
               ← Admin
             </Link>
-            <h1 className="mt-3 font-anton text-4xl uppercase tracking-wider">
+            <h1 className="mt-3 font-cassannet text-4xl uppercase tracking-wider">
               Team Members
             </h1>
           </div>
