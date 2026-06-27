@@ -26,12 +26,12 @@ export default function OurStoryView({ content, paragraphs }: Props) {
       <Constellation />
 
       <div className="relative mx-auto max-w-6xl">
-        <h2 className="text-center font-cassannet text-3xl tracking-wide sm:text-5xl md:text-6xl">
+        <h2 className="text-center font-cassannet font-bold text-3xl tracking-wide sm:text-5xl md:text-6xl">
           {heading}
         </h2>
 
         <div className="mx-auto mt-10 max-w-3xl sm:mt-16">
-          <div className="space-y-5 font-montserrat text-sm leading-[1.85] text-zinc-200 sm:space-y-6 sm:leading-[1.9] md:text-base">
+          <div className="space-y-5 font-cassannet text-sm leading-[1.85] text-zinc-200 sm:space-y-6 sm:leading-[1.9] md:text-base">
             {paragraphs.map((p) => {
               const text = lang === "ja" ? p.text_ja : p.text_en;
               if (!text) return null;
@@ -58,7 +58,7 @@ export default function OurStoryView({ content, paragraphs }: Props) {
         </div>
 
         {closingLines.length > 0 ? (
-          <p className="mx-auto mt-14 max-w-3xl text-center font-cassannet text-lg tracking-wide sm:mt-20 sm:text-2xl md:text-3xl">
+          <p className="mx-auto mt-14 max-w-3xl text-center font-cassannet font-bold text-lg tracking-wide sm:mt-20 sm:text-2xl md:text-3xl">
             {closingLines.map((line, i) => (
               <span key={i}>
                 {line}

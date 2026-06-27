@@ -11,7 +11,7 @@ export default function MemberSkeleton() {
       <HexGrid />
 
       <div className="relative mx-auto max-w-5xl">
-        <h2 className="text-center font-cassannet text-3xl tracking-wide sm:text-5xl md:text-6xl">
+        <h2 className="text-center font-cassannet font-bold text-3xl tracking-wide sm:text-5xl md:text-6xl">
           Team
         </h2>
 

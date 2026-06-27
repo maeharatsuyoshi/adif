@@ -34,7 +34,7 @@ export default async function AdminPage() {
             <p className="text-xs uppercase tracking-[0.3em] text-white/50">
               Asia Defense Innovation Fund
             </p>
-            <h1 className="mt-3 font-cassannet text-4xl uppercase tracking-wider">
+            <h1 className="mt-3 font-cassannet font-bold text-4xl uppercase tracking-wider">
               Admin
             </h1>
             <p className="mt-2 text-sm text-white/60">
@@ -52,7 +52,7 @@ export default async function AdminPage() {
             <p className="text-xs uppercase tracking-[0.3em] text-white/50 group-hover:text-white/80">
               Edit
             </p>
-            <h2 className="font-cassannet text-2xl uppercase tracking-wider">
+            <h2 className="font-cassannet font-bold text-2xl uppercase tracking-wider">
               Hero
             </h2>
             <p className="text-sm text-white/60">
@@ -67,7 +67,7 @@ export default async function AdminPage() {
             <p className="text-xs uppercase tracking-[0.3em] text-white/50 group-hover:text-white/80">
               Edit
             </p>
-            <h2 className="font-cassannet text-2xl uppercase tracking-wider">
+            <h2 className="font-cassannet font-bold text-2xl uppercase tracking-wider">
               Our Story
             </h2>
             <p className="text-sm text-white/60">
@@ -82,7 +82,7 @@ export default async function AdminPage() {
             <p className="text-xs uppercase tracking-[0.3em] text-white/50 group-hover:text-white/80">
               Manage
             </p>
-            <h2 className="font-cassannet text-2xl uppercase tracking-wider">
+            <h2 className="font-cassannet font-bold text-2xl uppercase tracking-wider">
               Team Members
             </h2>
             <p className="text-sm text-white/60">
@@ -97,7 +97,7 @@ export default async function AdminPage() {
             <p className="text-xs uppercase tracking-[0.3em] text-white/50 group-hover:text-white/80">
               Edit
             </p>
-            <h2 className="font-cassannet text-2xl uppercase tracking-wider">
+            <h2 className="font-cassannet font-bold text-2xl uppercase tracking-wider">
               Contact
             </h2>
             <p className="text-sm text-white/60">

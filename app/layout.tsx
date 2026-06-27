@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Geist, Montserrat } from "next/font/google";
+import { Geist } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "./lib/language";
 
@@ -10,15 +10,20 @@ const geistSans = Geist({
 });
 
 const cassannet = localFont({
-  src: "../public/cassannet-bold.otf",
+  src: [
+    {
+      path: "../public/cassannet-regular.otf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/cassannet-bold.otf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
   variable: "--font-cassannet",
   display: "swap",
-  weight: "700",
-});
-
-const montserrat = Montserrat({
-  variable: "--font-montserrat",
-  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
@@ -57,7 +62,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${cassannet.variable} ${montserrat.variable} antialiased`}
+      className={`${geistSans.variable} ${cassannet.variable} antialiased`}
     >
       <body className="flex min-h-screen flex-col">
         <LanguageProvider>{children}</LanguageProvider>

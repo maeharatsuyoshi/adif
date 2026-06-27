@@ -17,7 +17,7 @@ export default function ScrollIndicator() {
 
   return (
     <div
-      className={`pointer-events-none fixed bottom-4 right-4 z-40 hidden items-center gap-2 font-montserrat text-xs font-bold uppercase tracking-[0.2em] text-white transition-opacity duration-300 sm:bottom-6 sm:right-6 sm:flex ${
+      className={`pointer-events-none fixed bottom-4 right-4 z-40 hidden items-center gap-2 font-cassannet text-xs font-bold uppercase tracking-[0.2em] text-white transition-opacity duration-300 sm:bottom-6 sm:right-6 sm:flex ${
         hidden ? "opacity-0" : "opacity-90"
       }`}
       aria-hidden

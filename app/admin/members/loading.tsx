@@ -7,7 +7,7 @@ export default function Loading() {
         <p className="text-xs uppercase tracking-[0.3em] text-white/50">
           ← Admin
         </p>
-        <h1 className="mt-3 font-cassannet text-4xl uppercase tracking-wider">
+        <h1 className="mt-3 font-cassannet font-bold text-4xl uppercase tracking-wider">
           Team Members
         </h1>
 

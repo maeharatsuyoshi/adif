@@ -41,7 +41,7 @@ export default function Header() {
             className="h-8 w-auto sm:h-9"
           />
         </Link>
-        <nav className="flex items-center gap-4 font-montserrat text-sm font-bold tracking-wider text-white sm:gap-6">
+        <nav className="flex items-center gap-4 font-cassannet text-sm font-bold tracking-wider text-white sm:gap-6">
           <Link
             href="#our-story"
             className="hidden transition-opacity hover:opacity-70 sm:inline"

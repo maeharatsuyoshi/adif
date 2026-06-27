@@ -17,17 +17,17 @@ export default function NotFound() {
         className="h-24 w-auto sm:h-28"
       />
       <div>
-        <p className="font-cassannet text-6xl tracking-wider sm:text-7xl">404</p>
-        <h1 className="mt-3 font-cassannet text-2xl uppercase tracking-wider sm:text-3xl">
+        <p className="font-cassannet font-bold text-6xl tracking-wider sm:text-7xl">404</p>
+        <h1 className="mt-3 font-cassannet font-bold text-2xl uppercase tracking-wider sm:text-3xl">
           Page not found
         </h1>
-        <p className="mt-3 font-montserrat text-sm text-white/60">
+        <p className="mt-3 font-cassannet text-sm text-white/60">
           The page you were looking for does not exist.
         </p>
       </div>
       <Link
         href="/"
-        className="rounded-[3px] border-2 border-white px-10 py-3 font-montserrat text-xs font-bold uppercase tracking-[0.2em] transition-colors hover:bg-white hover:text-black"
+        className="rounded-[3px] border-2 border-white px-10 py-3 font-cassannet text-xs font-bold uppercase tracking-[0.2em] transition-colors hover:bg-white hover:text-black"
       >
         Return home
       </Link>

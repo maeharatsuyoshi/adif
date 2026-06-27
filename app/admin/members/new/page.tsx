@@ -25,7 +25,7 @@ export default async function NewMemberPage() {
             >
               ← Members
             </Link>
-            <h1 className="mt-3 font-cassannet text-4xl uppercase tracking-wider">
+            <h1 className="mt-3 font-cassannet font-bold text-4xl uppercase tracking-wider">
               New Member
             </h1>
           </div>

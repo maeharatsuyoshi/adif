@@ -32,7 +32,7 @@ export default async function LoginPage() {
           <p className="text-xs uppercase tracking-[0.3em] text-white/50">
             Asia Defense Innovation Fund
           </p>
-          <h1 className="mt-3 font-cassannet text-3xl uppercase tracking-wider text-white">
+          <h1 className="mt-3 font-cassannet font-bold text-3xl uppercase tracking-wider text-white">
             Admin Login
           </h1>
         </div>

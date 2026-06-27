@@ -42,7 +42,7 @@ export default async function EditParagraphPage({
             >
               ← Our Story
             </Link>
-            <h1 className="mt-3 font-cassannet text-4xl uppercase tracking-wider">
+            <h1 className="mt-3 font-cassannet font-bold text-4xl uppercase tracking-wider">
               Edit Paragraph
             </h1>
           </div>

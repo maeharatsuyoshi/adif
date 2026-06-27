@@ -10,7 +10,9 @@
       "Bash(node scripts/seed-site-content.mjs)",
       "Bash(Copy-Item public\\\\logo.png app\\\\icon.png -Force)",
       "PowerShell(Copy-Item public\\\\logo.png app\\\\apple-icon.png -Force)",
-      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" \"https://fonts.googleapis.com/css2?family=Cassannet+Bold\")"
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" \"https://fonts.googleapis.com/css2?family=Cassannet+Bold\")",
+      "WebSearch",
+      "WebFetch(domain:www.atipofoundry.com)"
     ]
   }
 }

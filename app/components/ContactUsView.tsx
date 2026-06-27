@@ -31,7 +31,7 @@ export default function ContactUsView({ content }: Props) {
               height={400}
               className="h-20 w-auto sm:h-28 md:h-32"
             />
-            <h2 className="font-cassannet text-3xl tracking-wide sm:text-5xl md:text-6xl">
+            <h2 className="font-cassannet font-bold text-3xl tracking-wide sm:text-5xl md:text-6xl">
               {t(content.heading_en, content.heading_ja)}
             </h2>
           </div>
@@ -58,14 +58,14 @@ export default function ContactUsView({ content }: Props) {
             {content.email ? (
               <a
                 href={`mailto:${content.email}`}
-                className="mt-5 break-all font-montserrat text-base font-bold text-sky-400 underline-offset-4 hover:underline sm:mt-6 sm:text-lg md:text-xl"
+                className="mt-5 break-all font-cassannet text-base font-bold text-sky-400 underline-offset-4 hover:underline sm:mt-6 sm:text-lg md:text-xl"
               >
                 {content.email}
               </a>
             ) : null}
           </div>
 
-          <div className="mt-12 grid grid-cols-1 gap-10 text-left font-montserrat text-sm sm:mt-20 sm:grid-cols-2 sm:gap-x-24 md:gap-x-32 md:text-base lg:gap-x-48">
+          <div className="mt-12 grid grid-cols-1 gap-10 text-left font-cassannet text-sm sm:mt-20 sm:grid-cols-2 sm:gap-x-24 md:gap-x-32 md:text-base lg:gap-x-48">
             <dl className="space-y-6">
               <div>
                 <dt className="whitespace-nowrap text-xs font-bold uppercase tracking-[0.2em] text-zinc-400">
@@ -110,7 +110,7 @@ export default function ContactUsView({ content }: Props) {
         </div>
       </section>
 
-      <footer className="bg-[#111827] py-6 px-6 text-center font-montserrat text-xs text-zinc-500">
+      <footer className="bg-[#111827] py-6 px-6 text-center font-cassannet text-xs text-zinc-500">
         © Copyright 2025 {t(content.copyright_en, content.copyright_ja)}
       </footer>
     </>
